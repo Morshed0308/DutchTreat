@@ -28,3 +28,4 @@ D:\TestProject\DutchTreat\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\Razor\Vi
 D:\TestProject\DutchTreat\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
 D:\TestProject\DutchTreat\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\Razor\Pages\Error.g.cshtml.cs
 D:\TestProject\DutchTreat\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\Razor\Pages\_ViewStart.g.cshtml.cs
+D:\TestProject\DutchTreat\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\Razor\Views\App\Shop.g.cshtml.cs

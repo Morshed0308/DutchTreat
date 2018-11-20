@@ -1,0 +1,14 @@
+﻿@model IEnumerable<Product> 
+
+
+@{
+    ViewData["Title"] = "Shop";
+}
+
+
+<p>Count: @Model.Count()</p>
+@foreach (var x in Model)
+{
+    <li>@x.Title</li>
+     
+}

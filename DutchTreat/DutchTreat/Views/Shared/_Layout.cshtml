@@ -5,6 +5,7 @@
     <title>Dutch Treat!</title>
 
     <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
 
     <link href="~/css/site.css" rel="stylesheet" />
 
@@ -15,7 +16,7 @@
 
             <header class="navbar navbar-collapse">
                 <!-- <div class="navbar-brand">Dutch treat!</div> -->
-                <a class="navbar-brand" href="#"><i class="fa fa-paint-brush"></i> Dutch Treat</a>
+                <a class="navbar-brand" href="#"><i class="fa fa-paper-plane"></i>Movie Treat</a>
                 <button class="navbar-toggler" data-toggle="collapse" data-target="#menu" >&#9774;</button>
                 <div id="menu" class="collapse navbar-collapse" > 
                     <ul class="navbar-nav mr-auto">
@@ -24,6 +25,7 @@
                         <li class="nav-item mr-2"><a asp-controller="App" asp-action="Contact">Contact</a></li>
 
                         <li class="nav-item"><a asp-controller="App" asp-action="About">About</a></li>
+                        
                     </ul>
                  </div>
              
@@ -33,7 +35,7 @@
 </div>
     <section>
 
-        <h3> @ViewBag.title </h3>
+        <h3 class="text-center"> @ViewBag.title </h3>
         @RenderBody()
     </section>
 

@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
@@ -19,5 +19,9 @@
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
   </ItemGroup>
+
+  <ItemGroup> <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.dotnet" Version="2.1.4" />
+                                      
+   </ItemGroup>
 
 </Project>

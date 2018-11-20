@@ -24,7 +24,7 @@ namespace DutchTreat.Services
             System.Net.Mail.SmtpClient smtp = new System.Net.Mail.SmtpClient
             {
                 Host = "smtp.gmail.com",
-                Port = 465,
+                Port = 587,
                 EnableSsl = true,
                 DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network,
                 UseDefaultCredentials = false,
