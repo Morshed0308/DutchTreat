@@ -21,12 +21,12 @@ namespace DutchTreat.Services
             client.Credentials = new System.Net.NetworkCredential("shahriar.morshed@brainstation-23.com", "shahriarbs@23");
             */
 
-            System.Net.Mail.SmtpClient smtp = new System.Net.Mail.SmtpClient
+            SmtpClient smtp = new SmtpClient
             {
                 Host = "smtp.gmail.com",
                 Port = 587,
                 EnableSsl = true,
-                DeliveryMethod = System.Net.Mail.SmtpDeliveryMethod.Network,
+                DeliveryMethod = SmtpDeliveryMethod.Network,
                 UseDefaultCredentials = false,
                 Credentials = new NetworkCredential("shahriar.morshed@brainstation-23.com", "shahriarbs@23")
 
