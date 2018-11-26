@@ -20,8 +20,8 @@
     </Content>
   </ItemGroup>
 
-  <ItemGroup> <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.dotnet" Version="2.1.4" />
+  <!--<ItemGroup> <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.dotnet" Version="2.1.4" />
                                       
-   </ItemGroup>
+   </ItemGroup>-->
 
 </Project>

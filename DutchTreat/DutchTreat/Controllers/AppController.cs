@@ -13,12 +13,12 @@ namespace DutchTreat.Controllers
     {
         
         private readonly IMailService _gmailService;
-        private readonly DutchContext _context;
+        private readonly IDutchRepository _repository;
 
-        public AppController (IMailService gmailService,DutchContext context)
+        public AppController (IMailService gmailService,IDutchRepository repository)
         {
             _gmailService = gmailService;
-            _context = context;
+            _repository = repository;
         }
 
 
@@ -57,14 +57,27 @@ namespace DutchTreat.Controllers
             ViewBag.title = "About Us";
             return View();
         }
+
         public IActionResult Shop()
         {
-            var results = _context.Products
-                .OrderBy(p => p.Category)
-                .ToList();
+            var results = _repository.GetAllProducts();
 
             return View(results);
+
+        }
+
+
+        [HttpPost]
+        public IActionResult Shop(string Name)
+        {
+            var result = _repository.GetProductsByName(Name);
+
+        
+          return View(result);
         
         }
+
+       
+
     }
 }

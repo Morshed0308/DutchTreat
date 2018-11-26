@@ -1,14 +1,62 @@
-﻿@model IEnumerable<Product> 
+﻿@model IEnumerable<Product>
+
 
 
 @{
     ViewData["Title"] = "Shop";
 }
 
+@section scripts{
+
+
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/src/jquery.validate.unobtrusive.js"></script>
+
+}
+
+
 
 <p>Count: @Model.Count()</p>
-@foreach (var x in Model)
-{
-    <li>@x.Title</li>
-     
-}
+
+
+
+
+    @using (Html.BeginForm("Shop", "App", FormMethod.Post))
+    {
+        
+        
+        <input type="text" name="Name" id="Name" />
+        @*<input type="text" name="fname" id="fname" />*@
+
+        <input type="submit" value="Search" class="btn btn-success" />
+    }
+
+
+    @foreach (var x in Model)
+    {
+        <li>@x.Title</li>
+
+    }
+
+
+<table>
+
+    <thead>
+        <tr>
+            <td>Name</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var x in Model)
+        {
+        }
+
+    </tbody>
+
+
+
+
+</table>
+
+
+
