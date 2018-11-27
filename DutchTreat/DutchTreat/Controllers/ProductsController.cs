@@ -22,9 +22,17 @@ namespace DutchTreat.Controllers
 
         }
         [HttpGet]
-        public IEnumerable<Product> Get()
+        public IActionResult Get()
         {
-            return _repository.GetAllProducts();
+            try
+            {
+                return Ok(_repository.GetAllProducts());
+            }
+            catch (Exception e) {
+                _logger.LogError($"Information retrieve failed -{e}");
+                return BadRequest("Bad Request");
+            }
+           
         }
 
         public IActionResult Index()
