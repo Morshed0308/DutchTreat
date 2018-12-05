@@ -1,94 +1,20 @@
 ﻿@model IEnumerable<Product>
 
-
-
 @{
     ViewData["Title"] = "Shop";
 }
 
 @section scripts{
 
+    <script src="~/ClientApp/dist/runtime.js"></script>
+    <script src="~/ClientApp/dist/polyfills.js"></script>
 
-    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
-    <script src="~/lib/jquery-validation-unobtrusive/src/jquery.validate.unobtrusive.js"></script>
+    <script src="~/ClientApp/dist/styles.js"></script>
 
+    <script src="~/ClientApp/dist/vendor.js"></script>
+    <script src="~/ClientApp/dist/main.js"></script>
 }
 
 
-
-<p>Count: @Model.Count()</p>
-
-
-
-
-<div class="formcheck">
-    @using (Html.BeginForm("Shop", "App", FormMethod.Post))
-    {
-
-
-        <input type="text" name="Name" id="Name" />
-        @*<input type="text" name="fname" id="fname" />*@
-
-        <input type="submit" value="Search" class="btn btn-success" />
-    }
-
-
-    @*@foreach (var x in Model)
-    {
-        <li>@x.Title</li>
-
-    }*@
-</div>
-
-
-<table class="table table-responsive">
-
-    <thead>
-        <tr>
-            <td>Name</td>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var x in Model)
-        {
-            <tr class="searchbody">
-                <td>@x.Title</td>
-            </tr>
-        }
-
-    </tbody>
-
-</table>
-
-<script>
-    $(document).ready(function () {
-        function Contains(item_1, item_2) {
-            if (item_1.indexOf(item_2) != -1)
-                return 1;
-        }
-        var searchtext = $("#Name");
-        searchtext.on("keyup",function () {
-            var text = searchtext.val().toLowerCase();
-            
-            $(".searchbody").each(function () {
-                if (Contains($(this).text().toLowerCase(), text)) {
-                    $(this).show();
-                }
-                else {
-                    $(this).hide();
-                }
-
-            });
-
-
-        });
-
-        
-
-    });
-
-
-
-</script>
-
+<the-shop> </the-shop>
 

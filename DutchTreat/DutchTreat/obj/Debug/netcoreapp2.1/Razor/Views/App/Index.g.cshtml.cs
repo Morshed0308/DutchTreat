@@ -70,7 +70,7 @@ using DutchTreat.Data.Entities;
             WriteLiteral("\r\n    <div id=\"ul-style\">\r\n        ");
             EndContext();
             BeginContext(76, 56, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "9590a8f565594c50ad705b597c5fecae", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "ca15555c11ac47dd9e96acbcf765a518", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -108,7 +108,7 @@ using DutchTreat.Data.Entities;
         ");
             EndContext();
             BeginContext(589, 431, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a5274f41875340cf9654837910ebf43f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c9f4f98918b34d8eac556c378d4266ef", async() => {
                 BeginContext(596, 417, true);
                 WriteLiteral(@"
             <label>Your Name</label>
@@ -147,7 +147,7 @@ using DutchTreat.Data.Entities;
             WriteLiteral("\r\n\r\n\r\n    </div>\r\n\r\n\r\n    <div>\r\n        <div id=\"logintoggle\">Login</div>\r\n\r\n        ");
             EndContext();
             BeginContext(1106, 592, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8e414c9609f845e8b4634460fa439684", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "439ed7c4887c406a8dea543308622909", async() => {
                 BeginContext(1131, 560, true);
                 WriteLiteral(@"
             <div>

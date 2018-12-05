@@ -63,20 +63,54 @@ namespace DutchTreat.Data
             throw new NotImplementedException();
         }
 
-        public IEnumerable<Order> GetAllOrders()
+        public IEnumerable<Order> GetAllOrders(bool IncludeItems)
         {
-            return _ctx.Orders
+            if (IncludeItems)
+            {
+                return _ctx.Orders
                 .Include(o => o.Items)
-                .ThenInclude(p=>p.Product)
+                .ThenInclude(p => p.Product)
                 .ToList();
+            }
+            else
+            {
+                return _ctx.Orders            
+                .ToList();
+
+
+            }
+            
         }
 
-        public Order GetOrdersById(int id)
+
+        public IEnumerable<Order> GetAllOrdersByUser(string user, bool includeItems)
+        {
+            if (includeItems)
+            {
+                return _ctx.Orders
+                        .Where(o=>o.User.UserName==user)
+                        .Include(o => o.Items)
+                        .ThenInclude(p => p.Product)
+                        .ToList();
+            }
+            else
+            {
+                return _ctx.Orders
+                    .Where(o => o.User.UserName == user)
+                    .ToList();
+
+
+            }
+
+        }
+
+
+        public Order GetOrdersById(string username,int id)
         {
             return _ctx.Orders
                     .Include(o => o.Items)
                     .ThenInclude(p => p.Product)
-                    .Where(i=>i.Id==id)
+                    .Where(i=>i.Id==id&& (i.User.UserName==username))
                     .FirstOrDefault();
         }
 
@@ -84,5 +118,7 @@ namespace DutchTreat.Data
         {
             _ctx.Add(model);
         }
+
+       
     }
 }

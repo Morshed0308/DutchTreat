@@ -29,7 +29,13 @@
 /Volumes/Software & Study/Practice/ASPdot/DutchTreat/DutchTreat/DutchTreat/obj/Debug/netcoreapp2.1/DutchTreat.dll
 /Volumes/Software & Study/Practice/ASPdot/DutchTreat/DutchTreat/DutchTreat/obj/Debug/netcoreapp2.1/DutchTreat.pdb
 /Volumes/Software & Study/Practice/ASPdot/DutchTreat/DutchTreat/DutchTreat/obj/Debug/netcoreapp2.1/DutchTreat.csproj.CopyComplete
-D:\TestProject\DutchTreat\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\DutchTreat.csprojAssemblyReference.cache
+D:\TestProject\DutchTreat\DutchTreat\DutchTreat\bin\Debug\netcoreapp2.1\DutchTreat.deps.json
+D:\TestProject\DutchTreat\DutchTreat\DutchTreat\bin\Debug\netcoreapp2.1\DutchTreat.runtimeconfig.json
+D:\TestProject\DutchTreat\DutchTreat\DutchTreat\bin\Debug\netcoreapp2.1\DutchTreat.runtimeconfig.dev.json
+D:\TestProject\DutchTreat\DutchTreat\DutchTreat\bin\Debug\netcoreapp2.1\DutchTreat.dll
+D:\TestProject\DutchTreat\DutchTreat\DutchTreat\bin\Debug\netcoreapp2.1\DutchTreat.pdb
+D:\TestProject\DutchTreat\DutchTreat\DutchTreat\bin\Debug\netcoreapp2.1\DutchTreat.Views.dll
+D:\TestProject\DutchTreat\DutchTreat\DutchTreat\bin\Debug\netcoreapp2.1\DutchTreat.Views.pdb
 D:\TestProject\DutchTreat\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\DutchTreat.csproj.CoreCompileInputs.cache
 D:\TestProject\DutchTreat\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\DutchTreat.RazorAssemblyInfo.cache
 D:\TestProject\DutchTreat\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\DutchTreat.RazorAssemblyInfo.cs
@@ -40,6 +46,7 @@ D:\TestProject\DutchTreat\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\DutchTre
 D:\TestProject\DutchTreat\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\DutchTreat.RazorCoreGenerate.cache
 D:\TestProject\DutchTreat\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\Razor\Pages\Error.g.cshtml.cs
 D:\TestProject\DutchTreat\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\Razor\Pages\_ViewStart.g.cshtml.cs
+D:\TestProject\DutchTreat\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\Razor\Views\Account\Login.g.cshtml.cs
 D:\TestProject\DutchTreat\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\Razor\Views\App\About.g.cshtml.cs
 D:\TestProject\DutchTreat\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\Razor\Views\App\Contact.g.cshtml.cs
 D:\TestProject\DutchTreat\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\Razor\Views\App\Index.g.cshtml.cs
@@ -49,14 +56,8 @@ D:\TestProject\DutchTreat\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\Razor\Vi
 D:\TestProject\DutchTreat\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
 D:\TestProject\DutchTreat\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\DutchTreat.RazorTargetAssemblyInfo.cache
 D:\TestProject\DutchTreat\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\DutchTreat.RazorTargetAssemblyInfo.cs
+D:\TestProject\DutchTreat\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\DutchTreat.Views.pdb
 D:\TestProject\DutchTreat\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\DutchTreat.dll
 D:\TestProject\DutchTreat\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\DutchTreat.pdb
-D:\TestProject\DutchTreat\DutchTreat\DutchTreat\bin\Debug\netcoreapp2.1\DutchTreat.deps.json
-D:\TestProject\DutchTreat\DutchTreat\DutchTreat\bin\Debug\netcoreapp2.1\DutchTreat.runtimeconfig.json
-D:\TestProject\DutchTreat\DutchTreat\DutchTreat\bin\Debug\netcoreapp2.1\DutchTreat.runtimeconfig.dev.json
-D:\TestProject\DutchTreat\DutchTreat\DutchTreat\bin\Debug\netcoreapp2.1\DutchTreat.dll
-D:\TestProject\DutchTreat\DutchTreat\DutchTreat\bin\Debug\netcoreapp2.1\DutchTreat.pdb
-D:\TestProject\DutchTreat\DutchTreat\DutchTreat\bin\Debug\netcoreapp2.1\DutchTreat.Views.dll
-D:\TestProject\DutchTreat\DutchTreat\DutchTreat\bin\Debug\netcoreapp2.1\DutchTreat.Views.pdb
-D:\TestProject\DutchTreat\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\DutchTreat.Views.pdb
 D:\TestProject\DutchTreat\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\DutchTreat.csproj.CopyComplete
+D:\TestProject\DutchTreat\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\DutchTreat.csprojAssemblyReference.cache

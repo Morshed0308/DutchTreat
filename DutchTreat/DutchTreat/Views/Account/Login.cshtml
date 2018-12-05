@@ -1,0 +1,50 @@
+﻿@model LoginModel
+@{
+   ViewBag.title= "Login";
+}
+@section scripts{
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/src/jquery.validate.unobtrusive.js"></script>
+
+}
+
+
+
+<div class="row">
+    <div class="col-md-3 offset-4">
+        <form method="post">
+            <div class="form-group">
+                <div asp-validation-summary="ModelOnly"></div>
+                <label asp-for="UserName">User Name</label>
+                <input asp-for="UserName" class="form-control" />
+                <span asp-validation-for="UserName" class="text-danger"></span>
+
+            </div>
+            <div class="form-group">
+                <label asp-for="PassWord" >PassWord</label>
+                <input asp-for="PassWord" type="password" class="form-control" />
+                <span asp-validation-for="PassWord" class="text-danger"></span>
+
+            </div>
+            <div class="form-group">
+
+                <input asp-for="RememeberMe" type="checkbox" class="checkbox"/>
+                <label asp-for="RememeberMe">Remember Me</label>
+                <span asp-validation-for="RememeberMe" ></span>
+
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Login" class="btn btn-success" />
+            </div>
+
+
+        </form>
+
+
+
+
+    </div>
+
+</div>
+

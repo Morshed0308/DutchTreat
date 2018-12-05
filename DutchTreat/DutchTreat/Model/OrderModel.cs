@@ -13,5 +13,6 @@ namespace DutchTreat.Model
         [Required]
         [MinLength(4)]
         public string OrderNumber { get; set; }
+        public ICollection<OrderItemModel> Items { get; set; }
     }
 }
