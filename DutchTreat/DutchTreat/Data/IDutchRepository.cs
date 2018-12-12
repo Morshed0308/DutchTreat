@@ -12,6 +12,7 @@ namespace DutchTreat.Data
         IEnumerable<Order> GetAllOrders(bool IncludeItems);
         IEnumerable<Order> GetAllOrdersByUser(string user,bool includeItems);
         Order GetOrdersById(string username,int id);
+        void AddOrder(Order newOrder);
 
 
         object GetProductsByCategory();
@@ -19,6 +20,6 @@ namespace DutchTreat.Data
         
         void AddEntity(Object model);
         bool SaveAll();
-       
+        
     }
 }

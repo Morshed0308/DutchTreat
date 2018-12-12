@@ -83,7 +83,7 @@ namespace DutchTreat.Controllers
                     var curruser =await _userManager.FindByNameAsync(User.Identity.Name);
                     newOrder.User = curruser;
 
-                    _respository.AddEntity(newOrder);
+                    _respository.AddOrder(newOrder);
                     if (_respository.SaveAll())
                     {
                       
@@ -98,9 +98,9 @@ namespace DutchTreat.Controllers
 
             }
             catch (Exception e) {
-                _logger.LogError($"Error Senfing Message{e}");
+                _logger.LogError($"Error Sending Message{e}");
             }
-            return BadRequest();
+            return BadRequest("I am an error! please solve me soon!");
         }
     
     }

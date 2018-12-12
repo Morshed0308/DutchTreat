@@ -27,10 +27,10 @@ namespace DutchTreat
 
         public Type RequireHTTPSAttribute { get; private set; }
 
-        public  Startup(IConfiguration config,IHostingEnvironment env)
+        public  Startup(IConfiguration config,IHostingEnvironment host)
         {
             _config = config;
-            _env = env;
+            _env = host;
         }
         // This method gets called by the runtime. Use this method to add services to the container.
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
@@ -80,10 +80,10 @@ namespace DutchTreat
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment host)
         {
             //app.UseDefaultFiles();
-            if(env.IsDevelopment())
+            if(host.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
 
@@ -102,7 +102,7 @@ namespace DutchTreat
              
             });
 
-            if(env.IsDevelopment())
+            if(host.IsDevelopment())
             {
                 using(var scope=app.ApplicationServices.CreateScope())
                 {

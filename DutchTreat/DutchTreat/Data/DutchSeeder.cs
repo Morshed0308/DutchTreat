@@ -16,10 +16,10 @@ namespace DutchTreat.Data
         private readonly IHostingEnvironment _env;
         private readonly UserManager<StoreUser> _userManager;
 
-        public DutchSeeder(DutchContext context, IHostingEnvironment env, UserManager<StoreUser> userManager)
+        public DutchSeeder(DutchContext context, IHostingEnvironment host, UserManager<StoreUser> userManager)
         {
             _ctx = context;
-            _env = env;
+            _env = host;
             _userManager = userManager;
         }
 

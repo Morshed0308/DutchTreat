@@ -1,0 +1,21 @@
+﻿<div class="row">
+
+    <div class="product-info col-md-4  border-white" *ngFor="let p of products">
+        <img src="/img/nun.jpg" class="img-thumbnail" />
+        <h3>{{p.category}}-{{p.size}}</h3>
+        
+            <div>Ticket {{p.price}}</div>
+            <div>Artist:-{{p.artist}}</div>
+            <div>Title: {{p.title}} </div>
+            <div>Description:{{p.artDescription}}</div>
+        <button id="buyBtn" class="btn btn-success btn-sm pull-right" (click)="addProduct(p)" >Buy</button>
+
+    </div>
+
+
+    <!--<ul>
+        <li *ngFor="let p of products"></li>
+    </ul>-->
+
+
+</div>

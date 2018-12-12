@@ -1,0 +1,28 @@
+﻿<h3>Shopping Cart</h3>
+<div>Count:{{data.order.items.length}}</div> 
+<div>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <td>Product</td>
+                <td>Artist</td>
+                <td>UnitPrice</td>
+                <td>Product Size</td>
+                
+            </tr>
+        </thead>
+        <tbody >
+            <tr *ngFor="let o of data.order.items">
+                <td>{{o.productCategory}}</td>
+                <td>{{ o.productArtist }}</td>
+                <td>{{(o.unitPrice)|currency:"BDT":'code'}}</td>
+                <td>{{(o.productSize)}}</td>
+            </tr>
+            
+        </tbody>
+    </table>
+
+    <button class="btn btn-success" *ngIf="data.order.items.length>0" (click)="onCheckout()">Checkout</button>
+
+</div>
