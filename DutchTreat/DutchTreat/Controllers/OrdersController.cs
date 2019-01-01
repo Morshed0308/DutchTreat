@@ -82,7 +82,7 @@ namespace DutchTreat.Controllers
                     }
                     var curruser =await _userManager.FindByNameAsync(User.Identity.Name);
                     newOrder.User = curruser;
-
+                   // _respository.AddEntity(newOrder);
                     _respository.AddOrder(newOrder);
                     if (_respository.SaveAll())
                     {

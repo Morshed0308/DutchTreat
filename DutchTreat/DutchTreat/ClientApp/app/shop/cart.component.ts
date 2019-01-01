@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
 })
 
 export class Cart {
-    constructor(private data: DataService, private route: Router) {
+    constructor(public data: DataService, private route: Router) {
     }
 
     onCheckout() {

@@ -27,10 +27,10 @@ namespace DutchTreat
 
         public Type RequireHTTPSAttribute { get; private set; }
 
-        public  Startup(IConfiguration config,IHostingEnvironment host)
+        public  Startup(IConfiguration config,IHostingEnvironment env)
         {
             _config = config;
-            _env = host;
+            _env = env;
         }
         // This method gets called by the runtime. Use this method to add services to the container.
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
@@ -41,7 +41,7 @@ namespace DutchTreat
                  cfg.User.RequireUniqueEmail = true;
              })
              .AddEntityFrameworkStores<DutchContext>();
-            var tt = _config["Tokens:key"];
+           
             services.AddAuthentication()
                 .AddCookie()
                 .AddJwtBearer(cfg => 
